@@ -20,9 +20,12 @@ class Solution:
             right=right+1
         return maxlen
 
-
+        #####################
+        # Hashset for count
+        # Maxfreq for getting the max value in the counter
         # Logic:
         # Window Size = right - left + 1
         # Replacements Needed = Window Size - maxFreq
         # If replacementsNeeded <= k:
         #     Window is valid.
+        #####################
