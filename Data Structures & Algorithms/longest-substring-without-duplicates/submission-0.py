@@ -1,14 +1,20 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        left,right=0,0
+        left=0
+        right=0
         unique=set()
-        length=0
+        maxlen=0
+
         while right < len(s):
             while s[right] in unique:
                 unique.remove(s[left])
-                left=left+1
+                left+=1
             unique.add(s[right])
-            length=max(length, right-left+1)
-            right=right+1
-        return length
+            maxlen=max(maxlen,right-left+1)
+            right+=1
+        return maxlen
 
+        ################
+        # Using set to find duplicates
+        # use while to remove until the duplicate is removed
+        ################
