@@ -10,3 +10,8 @@ class Solution:
                 left=right
             right=right+1
         return profit
+
+        ############
+        # Sliding window
+        # profit=right-left
+        ###########
