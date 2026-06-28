@@ -36,5 +36,12 @@ class Solution:
         else:
             return ""
 
-
+        
+        ########################
+        # use hashset to store s and t
+        # if we check t is in s -> it will be brute force
+        # instead use need and have , 
+        # need means t count , have means current count
+        # if A is found, add in hash and increment need count
+        #########################
 
